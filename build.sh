@@ -2,7 +2,8 @@
 
 mkdir -p build/ lib/
 cd build
-cmake ..
+cmake  -DCMAKE_INSTALL_PREFIX=/astro/mwavcs/pacer_blink/software/sles12sp5/development/mscommonlib/ .. 
 make
-cp libmscommonlib.so* ../lib/
+make install
+# cp libmscommonlib.so* ../lib/
 
