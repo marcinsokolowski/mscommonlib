@@ -12,7 +12,7 @@ sh$(LIBNAME) : $(IDL_GEN_FILES) $(OBJECTS) $(C_OBJECTS) $(CORBA_OBJECTS)
 	gcc -v -shared -Wl,-soname,lib$(LIBNAME) -o sh$(LIBNAME) $(OBJECTS) $(CORBA_OBJECTS) $(C_OBJECTS) 
 #	ld -o sh$(LIBNAME) $^ -shared
 #	ranlib $(LIBNAME)
-	@mkdir -p $(NDIR)/lib
+#	@mkdir -p $(NDIR)/lib
 	@mkdir -p $(NDIR)/slib
 #	cp $(LIBNAME) $(NDIR)/lib/lib$(LIBNAME)
 	cp sh$(LIBNAME) $(NDIR)/slib/lib$(LIBNAME)
