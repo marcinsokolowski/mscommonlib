@@ -12,6 +12,7 @@
 include options.mak
 
 C_COMP = gcc
+CPP_COMP = g++
 # CCFLAGS=-g -fexternal-templates
 # LDFLAGS=-g -fexternal-templates
 # EXTERNAL_CFITSIO_LIBS=$(PI_EXTERNALS)/lib/libCCfits.a $(PI_EXTERNALS)/lib/libcfitsio.a
