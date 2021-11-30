@@ -21,7 +21,7 @@ EXTERNAL_CFITSIO_LIBS=
 # CMN_LIBS=$(NDIR)/slib/libdatan.a $(NDIR)/slib/libdatsrc.a -ldl -lpthread -lcurl -llog4c $(USB_LIBUSB_DRIVER_LIBS)
 # Ubuntu16 : CMN_LIBS=$(NDIR)/slib/libdatsrc.a -ldl -lpthread -lcurl -llog4c $(USB_LIBUSB_DRIVER_LIBS)
 # Ubuntu18 :
-CMN_LIBS=$(NDIR)/slib/libdatsrc.a -ldl -lpthread -llog4c $(USB_LIBUSB_DRIVER_LIBS)
+CMN_LIBS=-ldl -lpthread -llog4c 
 
 
 
