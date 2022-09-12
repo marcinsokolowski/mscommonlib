@@ -9,7 +9,7 @@ add_library(mscommonlib SHARED
      src/gendistr.cpp src/calcrot.cpp src/mathfunc.cpp src/myfits.cpp src/mygraphcut.cpp src/pom.cpp src/vector.cpp
      src/ccddriver_interface.cpp
            )
-add_definitions(-D_UNIX -D_ENABLE_PROFILER_ -D_ENABLE_TRACING_ -D_ENABLE_VISUALIZATION_ -D_MONTE_CARLO_ -D_NO_ROOT_ -I../src/)
+add_definitions(-D_UNIX -D_ENABLE_PROFILER_ -D_ENABLE_TRACING_ -D_ENABLE_VISUALIZATION_ -D_MONTE_CARLO_ -D_NO_ROOT_ -I${CMAKE_SOURCE_DIR}/src/)
 set_target_properties(mscommonlib PROPERTIES
     VERSION ${PROJECT_VERSION}
     SOVERSION 1
